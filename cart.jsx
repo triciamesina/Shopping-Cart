@@ -204,7 +204,7 @@ const Products = (props) => {
       <Row>
         <form
           onSubmit={(event) => {
-            restockProducts(`http://localhost:1337/${query}`);
+            restockProducts(`${query}`);
             console.log(`Restock called on ${query}`);
             event.preventDefault();
           }}
